@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祝ご結婚</title>
+    <style>
+        h1 {
+            color:rgb(236, 179, 92)
+        }
+    </style>
+</head>
+<body>
+    {% if marriagePartner %}
+        <h1>
+            ご結婚おめでとうございます。<br>
+            あなたは {{ marriagePartner }} と結婚しました。<br>
+            {{ marriagePartner }} を幸せにしてやってください。
+        </h1>
+        <a href="./">トップへ戻る</a>
+    {% else %}
+        <a href="./">トップへ戻る</a>
+    {% endif %}
+    
+</body>
+</html>
